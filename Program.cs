@@ -11,22 +11,22 @@
 
     class Player
     {
+        private int _health;
+        private int _armor;
+        private int _speed;
+        private int _damage;
+
         public Player(int health, int armor, int speed, int damage)
         {
-            Health = health;
-            Armor = armor;
-            Speed = speed;
-            Damage = damage;
+            _health = health;
+            _armor = armor;
+            _speed = speed;
+            _damage = damage;
         }
-
-        private int Health;
-        private int Armor;
-        private int Speed;
-        private int Damage;
 
         public void ShowStats()
         {
-            Console.WriteLine("Здоровье: " + Health + "\nБроня: " + Armor + "\nСкорость передивижения: " + Speed + "\nУрон: " + Damage);
+            Console.WriteLine("Здоровье: " + _health + "\nБроня: " + _armor + "\nСкорость передивижения: " + _speed + "\nУрон: " + _damage);
         }
     }
 }
